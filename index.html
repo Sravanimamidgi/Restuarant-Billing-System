@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Tables</h2>
+            <div class="search-container">
+                <input type="text" id="tableSearch" placeholder="Search table">
+                <span class="clear-btn" id="clearTableSearch">&times;</span>
+            </div>
+            <div id="tables">
+               
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Menu</h2>
+            <div class="search-container">
+                <input type="text" id="menuSearch" placeholder="Search menu">
+                <span class="clear-btn" id="clearMenuSearch">&times;</span>
+            </div>
+            <div id="menu">
+                <div id="menuLeft" class="menu-column"></div>
+                <div id="menuRight" class="menu-column"></div>
+            </div>
+        </div>
+    </div>
+\
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div id="orderDetails">
+               
+                <button id="generateBillButton">Generate Bill</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
